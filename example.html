@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/inputValidator.js"></script>
+
+		<link rel="stylesheet" href="css/inputValidator.css" type="text/css">
+		<style>
+			.user-input {
+				margin-left: 34px;
+				margin-top: 27px;
+			}
+		</style>
+	</head>
+<body>
+	<div class="user-input"><label>First name:</label>	<input type="text" data-input-group="reg-from" data-req-message="First name is required" data-secondary-check="onlyLetters"></div>
+	<br>
+	<br>
+
+	<div class="user-input"><label>Last name:</label>	<input type="text" data-input-group="reg-from" data-req-message="Last name is required" data-secondary-check="onlyLetters">
+	</div>
+	<br>
+	<br>
+
+	<div class="user-input"><label>Email: </label><input type="text" data-input-group="reg-from" data-req-message="Email address is required" data-secondary-check="singleEmail"></div>
+	<br><br>
+
+	<div class="user-input"><label>MultiEmail: </label><input type="text" data-input-group="reg-from" data-req-message="Email address is required, you can add multiple ',' separated addresses" data-secondary-check="multiEmail"></div>
+	<br><br>
+
+	<div class="user-input"><label>Telephone:</label> <input type="text" data-input-group="reg-from" data-req-message="Telephone number is required" data-secondary-check="telephone"></div>
+	<br><br>
+
+	<div class="user-input"><label>Salary:</label> <input type="text" data-input-group="reg-from" data-req-message="Salary is required" data-secondary-check="onlyNumbers"><div>
+	<br><br>
+
+	<div class="user-input"><input type="button" data-input-group="reg-from" value="click me" data-disable-on-load="true"></div>
+</body>
+</html>
