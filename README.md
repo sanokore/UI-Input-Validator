@@ -11,7 +11,7 @@ which you want to validate under one group,like
     <input type="text" data-input-group="reg-from" data-req-message="Last name is required" 
     	   data-secondary-check="onlyLetters">
     
-    here "data-input-group" attribute specifies the group of textboxes validate under one group.
+    here "data-input-group" attribute specifies the group of textboxes to validate under one group.
     
     In above example "data-req-message" specifies the required message to be shown for perticular input textbox,
     and "data-secondary-check" specifies the any secondary level validation to be performded 
@@ -30,7 +30,7 @@ Some points:
     1) Its not neccesory to have html form element to use this framework.
     2) It uses jquery library.
     3) It uses jquery validation-engine's CSS.
-    4) You can add second-level on the fly, 
+    4) You can add second-level validation on the fly, 
        so you have to add reGex and error message to be shown for your second level 
        validation in inputValidator.js as below,
     
